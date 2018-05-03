@@ -14,11 +14,13 @@
     <div>
         <h1>E's Tunetable</h1>
     </div>
-  <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+    <div class = "container-fluid searchbar">
+  <form class="form-inline mx-auto" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
         <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
         <div class="form-group">
             <input style = "background-color: transparent" type="text" class="form-control" name="artist" placeholder="Artist Name" />
             <button style = "background-color: transparent" type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+        </div>
         </div>
     </form>
    

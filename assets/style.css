@@ -26,10 +26,8 @@
     background-color: #555;
 }
 
-.form-group{
-    position: fixed;
-    top: 20%;
-    left:15%;
+.searchbar{
+    display: inline-grid
 }
 
 .card1-bg {
