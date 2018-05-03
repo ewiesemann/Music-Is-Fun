@@ -1,7 +1,7 @@
 .body1 {
     background-image: url("Turntable.jpg");
     background-size: 130rem;
-    background-repeat: no-repeat;
+    background-image: repeat;
     background-attachment: fixed
 
 }
