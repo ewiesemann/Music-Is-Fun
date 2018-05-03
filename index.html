@@ -10,19 +10,23 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body class = "body1">
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+<body class = "body1 text-center text-light" >
+    <div>
+        <h1>E's Tunetable</h1>
+    </div>
+  <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
         <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
         <div class="form-group">
-            <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-            <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+            <input style = "background-color: transparent" type="text" class="form-control" name="artist" placeholder="Artist Name" />
+            <button style = "background-color: transparent" type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
         </div>
     </form>
    
     <div class="container" id="songs">
         
-    
     </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="itunes-service.js"></script>

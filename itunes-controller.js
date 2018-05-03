@@ -13,6 +13,7 @@ function ItunesController(){
     var template = ''
     for (let i = 0; i < songs.length; i++) {
       const song = songs[i];
+     
       template += `
       <div class = "row d-flex justify-content-center">
         <div class = "card d-flex align-items-center card1-bg col-4" style = "width: 30rem">
@@ -20,8 +21,9 @@ function ItunesController(){
         <div class="card-body">
           <h3>Title: ${song.title}</h3>
           <h3>Artist: ${song.artist}</h3>
-          <h3>Collecion: ${song.collection}</h3><button> Price: ${song.price}</button> 
-          <audio controls>
+          <h3>Collecion: ${song.collection}</h3>
+          <button> Price: ${song.price}</button> 
+          <audio controls controlsList = "nodownload">
           <source src=${song.preview} type="audio/ogg">
           </audio> 
         </div>
@@ -33,4 +35,20 @@ function ItunesController(){
     }
   
   }
-  
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
