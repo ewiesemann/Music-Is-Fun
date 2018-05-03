@@ -7,7 +7,6 @@ function ItunesController(){
     itunesService.getMusicByArtist(artist).then(drawSongs); //after get music by artist returns what are you doing with the objects?
   }
 
-  //Start coding here
 
   function drawSongs(results){
     var songs = results
