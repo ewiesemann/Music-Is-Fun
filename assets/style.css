@@ -6,6 +6,10 @@
 
 }
 
+h1 {
+    font-size: 100px
+}
+
 #myBtn {
     display: none; 
     position: fixed;
